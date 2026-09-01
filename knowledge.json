@@ -1,0 +1,436 @@
+{
+  "name": "Deepak Subhash Gaikwad",
+  "role": "AI Engineer & Data Scientist",
+  "status": "Final-year B.Tech student at JSPM University, Pune (2023-2027), specializing in Computer Science Engineering with Artificial Intelligence and Data Science. Current CGPA: 8.5",
+  "contact": {
+    "email": "deep12akgaikwad082004@gmail.com",
+    "phone": "+91 8805520293",
+    "linkedin": "https://linkedin.com/in/deepak-gaikwad-a5b495292",
+    "github": "https://github.com/MRPerfectionist45",
+    "location": "Pune, Maharashtra, India"
+  },
+  "summary": "Ambitious final-year Computer Science Engineering student specializing in AI & Data Science, possessing a robust foundation in building end-to-end machine learning pipelines and generative AI applications. Technically proficient in Python, SQL, LangChain, and modern data science frameworks, with a proven track record of applying statistical analysis and predictive modeling to deliver actionable business insights. Eager to contribute as a Data Scientist, AI Engineer, or ML Engineer, having successfully executed projects that achieved up to 97% accuracy.",
+  "education": [
+    {
+      "degree": "B.Tech in Computer Science Engineering (AI & Data Science)",
+      "institution": "JSPM University, Pune",
+      "dates": "2023 – 2027",
+      "cgpa": "8.5",
+      "status": "Final Year"
+    },
+    {
+      "degree": "Higher Secondary Certificate (HSC)",
+      "institution": "Modern College, Pune",
+      "dates": "2021 – 2023",
+      "percentage": "71.84%"
+    },
+    {
+      "degree": "Secondary School Certificate (SSC)",
+      "institution": "SJH Gurunanak High School, Pune",
+      "dates": "2010 – 2021",
+      "percentage": "92.40%"
+    }
+  ],
+  "skills": {
+    "programming": [
+      "Python",
+      "SQL",
+      "C",
+      "C++"
+    ],
+    "data_analysis_bi": [
+      "Data Analysis",
+      "EDA",
+      "Data Cleaning",
+      "Data Wrangling",
+      "Statistical Analysis",
+      "Data Visualization",
+      "Power BI",
+      "Excel",
+      "Dashboards"
+    ],
+    "machine_learning": [
+      "Regression",
+      "Classification",
+      "Clustering",
+      "Predictive Modeling",
+      "Model Evaluation",
+      "Model Deployment",
+      "Scikit-learn",
+      "NLP",
+      "Deep Learning Fundamentals"
+    ],
+    "generative_ai": [
+      "RAG",
+      "LLMs",
+      "Prompt Engineering",
+      "Semantic Search",
+      "LangChain",
+      "LangGraph",
+      "Agentic AI",
+      "MCP"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "MongoDB",
+      "Firebase Firestore",
+      "SQL"
+    ],
+    "libraries_tools": [
+      "NumPy",
+      "Pandas",
+      "Scikit-learn",
+      "Matplotlib",
+      "Seaborn",
+      "Git",
+      "GitHub",
+      "Jupyter Notebook",
+      "Google Colab",
+      "VS Code",
+      "Streamlit"
+    ],
+    "core_concepts": [
+      "Data Structures & Algorithms",
+      "Feature Engineering",
+      "A/B Testing Basics",
+      "Data Pipelines",
+      "API Integration"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Data Science Intern",
+      "organization": "Saiket Systems (Hybrid), Pune",
+      "dates": "Jul 2026 – Sep 2026",
+      "type": "Internship",
+      "highlights": [
+        "Engineered a customer churn prediction model to identify at-risk clients using historical transaction and behavioral data, achieving 94% prediction accuracy",
+        "Performed extensive data cleaning, EDA, and feature engineering, improving overall model performance by 95%",
+        "Delivered data-driven insights and visualizations that informed a new customer retention strategy, projected to reduce churn"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "RAG-Based AI Teaching Assistant",
+      "description": "Developed an advanced AI-powered teaching assistant capable of answering complex queries based on uploaded educational video content. Engineered an end-to-end Retrieval-Augmented Generation (RAG) pipeline integrating speech-to-text processing and semantic search, resulting in a 94% improvement in answer relevance.",
+      "technologies": [
+        "Python",
+        "LangChain",
+        "NLP",
+        "RAG",
+        "LLMs"
+      ],
+      "github": "https://github.com/MRPerfectionist45/RAG-Based-AI-Teaching-Assistant-System.git",
+      "impact": "End-to-end RAG pipeline with semantic search and context-aware response generation"
+    },
+    {
+      "title": "Crop Recommendation System",
+      "description": "Built a high-accuracy machine learning classification model to recommend optimal crops based on NPK soil nutrients and climatic parameters such as temperature, humidity, and rainfall. Performed rigorous data preprocessing, feature engineering, and EDA on large agricultural datasets.",
+      "technologies": [
+        "Python",
+        "Scikit-learn",
+        "Classification",
+        "Machine Learning"
+      ],
+      "github": "https://github.com/MRPerfectionist45",
+      "impact": "92% prediction accuracy, outperforming baseline through optimized classification algorithms"
+    },
+    {
+      "title": "House Price Prediction using Machine Learning",
+      "description": "Developed a robust machine learning regression model to predict residential property values using historical housing datasets. Executed comprehensive data preprocessing, feature engineering, and exploratory data analysis to identify key price drivers.",
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Scikit-learn",
+        "Regression"
+      ],
+      "github": "https://github.com/MRPerfectionist45/House-Prediction-ML-model.git",
+      "impact": "High R² score of 97%, significantly reducing RMSE through advanced regression techniques"
+    },
+    {
+      "title": "The Ledger — Personal Discipline Tracking Web App",
+      "description": "Architected a personal analytics and habit-tracking web application allowing users to log daily routines, streaks, and journal entries. Implemented secure, cloud-based data storage using Firebase Firestore with Google Sign-In authentication for persistent, cross-device tracking.",
+      "technologies": [
+        "JavaScript",
+        "Firebase Firestore",
+        "Google Sign-In",
+        "Data Tracking"
+      ],
+      "github": "https://github.com/MRPerfectionist45",
+      "impact": "Cross-device persistent tracking with actionable personal insights from behavioral data"
+    },
+    {
+      "title": "SaiKrupa Suzuki Dealership Website",
+      "description": "Designed and developed a responsive dealership website with an animated product showcase. Implemented EMI calculator, bike comparison, WhatsApp enquiry, and online booking features. Successfully deployed the website on Netlify with a mobile-first responsive design.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Responsive Design"
+      ],
+      "demo": "https://saikrupa-suzuki.netlify.app",
+      "impact": "Deployed on Netlify with mobile-first responsive design"
+    }
+  ],
+  "certifications": [
+    "Ultimate Data Science and Gen AI Bootcamp - Krish Naik Academy",
+    "Complete Data Science Bootcamp - CodeWithHarry",
+    "Python Programming with OOP - CodeWithHarry",
+    "SQL and Relational Database Certification",
+    "Complete AI Automation & Agentic AI Bootcamp",
+    "n8n Production Mastery: From Zero to Hero - Agency Ready in 30 Days"
+  ],
+  "qualities": [
+    "Strong communication and presentation skills",
+    "Analytical and problem-solving thinking",
+    "Good business knowledge and leadership",
+    "Team player eager to contribute",
+    "Love to build things from scratch"
+  ],
+  "hobbies": [
+    "Avid book reader (5+ years) - Self-improvement, Business, Finance, Tech, Leadership",
+    "Cricket and Badminton enthusiast",
+    "Experimenting with new AI tools and frameworks"
+  ],
+  "books_read": {
+    "description": "Deepak is an avid reader with a personal library spanning over 5 years. He primarily reads books on self-improvement, business, finance, leadership, and personal development. He believes that reading is the fastest way to upgrade your mindset and gain wisdom from those who have already walked the path.",
+    "total_books_read": "40+",
+    "reading_streak": "5+ years",
+    "favorite_genres": [
+      "Self-Improvement",
+      "Business",
+      "Finance",
+      "Leadership",
+      "Psychology",
+      "Biography"
+    ],
+    "books": [
+      {
+        "title": "Rich Dad Poor Dad",
+        "author": "Robert Kiyosaki",
+        "category": "Finance / Mindset",
+        "key_lessons": [
+          "The rich make their money work for them — they buy assets that generate income rather than working for a paycheck.",
+          "Financial education is your greatest asset — intelligence solves problems and produces money, but money without financial intelligence is quickly lost.",
+          "Know the difference between assets (put money in your pocket) and liabilities (take money out of your pocket).",
+          "Don't be controlled by emotions — fear and greed keep people trapped in the rat race.",
+          "Work to acquire life skills, not just for money — learn accounting, investing, sales, marketing, and leadership.",
+          "Failure inspires winners and defeats losers — the rich take calculated risks while the poor fear failure.",
+          "Pay yourself first — invest in income-generating assets before paying bills."
+        ],
+        "impact_on_deepak": "This was one of the first books that changed Deepak's perspective on money. It taught him to think like an investor rather than an employee, and to value financial literacy over academic degrees alone."
+      },
+      {
+        "title": "The Psychology of Money",
+        "author": "Morgan Housel",
+        "category": "Finance / Psychology",
+        "key_lessons": [
+          "Financial success is more about how you behave than how much you know.",
+          "True wealth is what you don't see — savings, patience, and restraint are the real indicators of financial freedom.",
+          "People make money decisions based on their unique life experiences, not pure logic.",
+          "Warren Buffett made 99% of his wealth after age 50 — good investing is about patience and discipline, not timing.",
+          "Compounding works best when you don't interrupt it.",
+          "Your peace of mind matters more than maximizing returns.",
+          "Greed blinds people to risk — know when enough is enough."
+        ],
+        "impact_on_deepak": "Taught Deepak that building wealth is a psychological game. He learned to focus on behavior, patience, and long-term thinking rather than chasing quick returns."
+      },
+      {
+        "title": "Think and Grow Rich",
+        "author": "Napoleon Hill",
+        "category": "Success / Mindset",
+        "key_lessons": [
+          "Desire is the starting point of all achievement — you must have a burning desire for your goal.",
+          "Faith and auto-suggestion can transform your subconscious beliefs into reality.",
+          "Organized planning and persistence are essential for turning dreams into riches.",
+          "The Mastermind principle — surrounding yourself with like-minded people accelerates success.",
+          "Transmutation of emotions into creative energy drives innovation and achievement."
+        ],
+        "impact_on_deepak": "Helped Deepak understand the power of desire, faith, and organized planning. It reinforced his belief that success starts in the mind before it manifests in reality."
+      },
+      {
+        "title": "Wings of Fire",
+        "author": "A.P.J. Abdul Kalam",
+        "category": "Biography / Inspiration",
+        "key_lessons": [
+          "Dreams transform into thoughts and thoughts result in action — the power of vision.",
+          "Excellence is a continuous process, not an accident.",
+          "Leadership requires integrity, sacrifice, and service to the nation.",
+          "Failure is a stepping stone to success — Kalam faced many setbacks before becoming the 'Missile Man of India'.",
+          "Education and hard work can lift anyone from humble beginnings to great heights."
+        ],
+        "impact_on_deepak": "Deeply inspired Deepak's work ethic and patriotism. Kalam's journey from a small town to becoming India's President taught him that no dream is too big with dedication."
+      },
+      {
+        "title": "Can't Hurt Me",
+        "author": "David Goggins",
+        "category": "Mental Toughness / Self-Discipline",
+        "key_lessons": [
+          "The 40% Rule — when your mind says you're done, you've only used 40% of your potential.",
+          "Build mental calluses through repeated discomfort — embrace suffering to grow stronger.",
+          "The Accountability Mirror — face your flaws with brutal honesty and hold yourself accountable.",
+          "The Cookie Jar — draw strength from past victories when facing new challenges.",
+          "Most of our limits are mental, not physical — master your mind to defy the odds.",
+          "Talent is not required — relentless effort and discipline beat raw talent."
+        ],
+        "impact_on_deepak": "Transformed Deepak's approach to challenges. The 40% Rule and Accountability Mirror are tools he uses daily to push through difficult projects and study sessions."
+      },
+      {
+        "title": "The Mountain Is You",
+        "author": "Brianna Wiest",
+        "category": "Self-Sabotage / Personal Growth",
+        "key_lessons": [
+          "You are your own mountain — your biggest obstacle is yourself.",
+          "Self-sabotage acts as a safety net offering temporary relief but hindering true progress.",
+          "Trust your instincts but be wary of emotions that distort reality.",
+          "Small, incremental shifts lead to lasting transformation — not drastic measures.",
+          "Visualize your future self to guide your transformation and embrace your strengths.",
+          "Your struggles are not just barriers — they are guides to a fulfilling life."
+        ],
+        "impact_on_deepak": "Helped Deepak recognize and break self-sabotaging patterns. He learned to view inner struggles as opportunities for growth rather than obstacles."
+      },
+      {
+        "title": "The Millionaire Fastlane",
+        "author": "M.J. DeMarco",
+        "category": "Business / Entrepreneurship",
+        "key_lessons": [
+          "The 'Slowlane' (job + savings) is a trap — entrepreneurship is the 'Fastlane' to wealth.",
+          "Time is your most important resource — divorce wealth from time by building systems.",
+          "The Law of Effection — to make millions, you need to impact millions of lives.",
+          "Switch from consumer to producer mentality — think about what you can sell, not just buy.",
+          "A good business must obey five commandments: Need, Entry, Control, Scale, and Time.",
+          "Fast wealth happens exponentially, not linearly — build money trees that work without you."
+        ],
+        "impact_on_deepak": "Shifted Deepak's mindset from 'get a good job' to 'build value at scale.' It inspired his entrepreneurial spirit and his approach to creating impactful projects."
+      },
+      {
+        "title": "The Subtle Art of Not Giving a F*ck",
+        "author": "Mark Manson",
+        "category": "Self-Help / Philosophy",
+        "key_lessons": [
+          "Happiness comes from solving meaningful problems, not being problem-free.",
+          "You are not special — accept your averageness and focus on real improvement.",
+          "Choose your struggles wisely — what pain are you willing to sustain for your goals?",
+          "Take radical responsibility — you always have control over how you respond to life.",
+          "Embrace uncertainty — growth comes from realizing your perspectives can be wrong.",
+          "Not giving a f*ck means being comfortable with being different, not being indifferent."
+        ],
+        "impact_on_deepak": "Taught Deepak to be selective about what he cares about. He learned to focus his energy on meaningful goals rather than seeking validation from everyone."
+      },
+      {
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "category": "Habits / Productivity",
+        "key_lessons": [
+          "Small daily improvements (1% better) compound into remarkable results over time.",
+          "The 4 Laws of Behavior Change: Make it Obvious, Attractive, Easy, and Satisfying.",
+          "Identity-based habits — focus on who you want to become, not just what you want to achieve.",
+          "Environment design shapes behavior — make good habits easy and bad habits hard.",
+          "The Plateau of Latent Potential — results often come after a period of seemingly no progress.",
+          "Professionals stick to the schedule; amateurs let life get in the way."
+        ],
+        "impact_on_deepak": "The most practical book Deepak has read. He applies the 4 Laws daily — from coding practice to fitness routines. The 'two-minute rule' helped him overcome procrastination."
+      },
+      {
+        "title": "The 7 Habits of Highly Effective People",
+        "author": "Stephen R. Covey",
+        "category": "Leadership / Effectiveness",
+        "key_lessons": [
+          "Be Proactive — take responsibility for your choices and responses.",
+          "Begin with the End in Mind — define your vision and values before acting.",
+          "Put First Things First — prioritize important over urgent tasks.",
+          "Think Win-Win — seek mutually beneficial solutions in all interactions.",
+          "Seek First to Understand, Then to Be Understood — empathetic listening builds trust.",
+          "Synergize — collaboration produces results greater than individual efforts.",
+          "Sharpen the Saw — continuous self-renewal in physical, mental, social, and spiritual dimensions."
+        ],
+        "impact_on_deepak": "Shaped Deepak's leadership philosophy. The habits of proactivity, beginning with the end in mind, and seeking first to understand are principles he applies in team projects."
+      },
+      {
+        "title": "The Secret",
+        "author": "Rhonda Byrne",
+        "category": "Mindset / Law of Attraction",
+        "key_lessons": [
+          "Like attracts like — your thoughts and feelings determine what you attract into your life.",
+          "The Ask-Believe-Receive process for manifesting your desires.",
+          "Gratitude is the most powerful practice — use it until it becomes your way of life.",
+          "Your thoughts are magnetic frequencies that attract matching circumstances.",
+          "Focus on what you want, not what you don't want — the universe doesn't distinguish between good and bad thoughts."
+        ],
+        "impact_on_deepak": "Introduced Deepak to the power of positive thinking and visualization. He practices daily gratitude and maintains a vision board for his career goals."
+      },
+      {
+        "title": "The Magic",
+        "author": "Rhonda Byrne",
+        "category": "Gratitude / Practice",
+        "key_lessons": [
+          "Gratitude is the key to unlocking abundance in 28 days of practice.",
+          "Write 10 blessings daily and end each with 'thank you, thank you, thank you'.",
+          "Use a gratitude rock to recall the best thing that happened each day.",
+          "Gratitude transforms your energy and attracts more to be grateful for."
+        ],
+        "impact_on_deepak": "Deepak completed the 28-day gratitude practice and continues to journal daily blessings. It significantly improved his mindset during stressful academic periods."
+      },
+      {
+        "title": "The Compound Effect",
+        "author": "Darren Hardy",
+        "category": "Success / Habits",
+        "key_lessons": [
+          "Small, smart choices + Consistency + Time = Radical Difference.",
+          "Track everything — awareness is the first step to change.",
+          "Your influences (people, input, environment) determine up to 95% of your success.",
+          "Momentum starts slow but compounds — like pushing a snowball downhill.",
+          "Why-power is stronger than willpower — connect actions to your deepest values.",
+          "Take 100% responsibility for everything you experience — no blame, no victimhood."
+        ],
+        "impact_on_deepak": "Reinforced the power of consistency. Deepak tracks his daily habits including coding hours, book pages read, and fitness — all inspired by this book."
+      },
+      {
+        "title": "Think Big",
+        "author": "Dr. Ben Carson",
+        "category": "Self-Improvement / Success",
+        "key_lessons": [
+          "Your thoughts determine your destiny — think big to achieve big.",
+          "Knowledge is the key to unlocking your potential — never stop learning.",
+          "Perseverance through adversity builds character and success.",
+          "Faith and hard work together can overcome any obstacle.",
+          "Use your God-given talents to make a difference in the world."
+        ],
+        "impact_on_deepak": "Inspired Deepak to set ambitious goals and believe in his ability to achieve them, regardless of his starting point."
+      },
+      {
+        "title": "Additional Reading",
+        "author": "Various Authors",
+        "category": "Business / Leadership / Self-Improvement",
+        "key_lessons": [
+          "Deepak also reads books on business strategy, leadership, and technology trends.",
+          "Some additional favorites include: 'Good to Great' by Jim Collins, 'Leaders Eat Last' by Simon Sinek, 'Deep Work' by Cal Newport, 'Zero to One' by Peter Thiel, and 'The Lean Startup' by Eric Ries.",
+          "He regularly follows blogs and newsletters from Naval Ravikant, Paul Graham, and AI research publications.",
+          "Deepak believes in applying what he reads — 'Knowledge uninvested is wasted.'"
+        ],
+        "impact_on_deepak": "This diverse reading habit keeps Deepak updated on industry trends, leadership principles, and emerging technologies, making him a well-rounded professional."
+      }
+    ]
+  },
+  "future_projects": [
+    "Narisuruksha - Women Safety App",
+    "Chalo Jii - Tourist Travel & Stay App",
+    "Charging Transfer App"
+  ],
+  "job_focus": [
+    "Data Scientist",
+    "AI Engineer",
+    "ML Engineer",
+    "Data Analyst",
+    "Data Engineering",
+    "Positions related to AI, ML, and Data Science"
+  ],
+  "website_features": {
+    "theme": "The portfolio supports Dark Mode and Light Mode. Users can toggle between them using the moon icon in the top-right corner. Dark mode uses a deep navy/black palette (#0a0a0f background, #13131a surface). Light mode uses a clean off-white palette (#f5f5f7 background, #ffffff surface).",
+    "ai_assistant": "An AI chatbot powered by Groq (Llama 3.3 70B) answers questions about Deepak's skills, projects, education, certifications, books he has read, and career interests. The chat does not persist history between sessions for privacy.",
+    "blog": "The blog section contains Deepak's personal journey article. Visitors can rate it 1-5 stars, like it, and leave comments.",
+    "projects": "An interactive project showcase with links to GitHub repositories and live demos.",
+    "responsive_design": "The site is designed as a mobile-first experience with a desktop iPhone frame simulation."
+  }
+}
