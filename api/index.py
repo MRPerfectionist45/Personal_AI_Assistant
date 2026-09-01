@@ -34,7 +34,7 @@ def home():
 
 @app.get("/api/health")
 def health():
-    return {"status": "healthy", "entries_loaded": len(KNOWLEDGE)}
+    return {"status": "online", "entries_loaded": len(KNOWLEDGE)}
 
 @app.post("/api/chat")
 async def chat(request: Request):
@@ -61,12 +61,9 @@ async def groq_rag_response(query: str) -> str:
     import httpx
     
     api_key = os.getenv("GROQ_API_KEY")
-    
-    # DEBUG: Check if key is loaded (remove this after fixing)
     if not api_key:
-        return "ERROR: GROQ_API_KEY not found. Please add it in Vercel Dashboard > Project Settings > Environment Variables, then redeploy."
+        return "ERROR: GROQ_API_KEY not found. Please add it in Vercel Dashboard > Settings > Environment Variables, then redeploy."
     
-    # Build context from knowledge base
     context = json.dumps(KNOWLEDGE[:10], indent=2, ensure_ascii=False)
     
     system_prompt = f"""You are Deepak Gaikwad's personal AI assistant.
