@@ -1,6 +1,12 @@
-from fastapi import FastAPI, Request, APIRouter
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from mangum import Mangum
+import os
+import json
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = FastAPI()
 
@@ -12,38 +18,91 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# DEBUG: Visit /api/debug or /debug to confirm what path Vercel sends
-@app.get("/api/debug")
-@app.get("/debug")
-async def debug(request: Request):
-    return {
-        "received_path": request.url.path,
-        "note": "Use this to verify routing is working"
-    }
+# ========== LOAD KNOWLEDGE BASE ==========
+KNOWLEDGE = []
+try:
+    with open("knowledge.json", "r", encoding="utf-8") as f:
+        KNOWLEDGE = json.load(f)
+except Exception as e:
+    print(f"Warning: Could not load knowledge.json: {e}")
+    KNOWLEDGE = []
 
-# --- MAIN ROUTES ---
-router = APIRouter()
-
-@router.get("/")
+@app.get("/api")
+@app.get("/api/")
 def home():
-    return {"message": "Backend is working!"}
+    return {"message": "Backend is working!", "knowledge_entries": len(KNOWLEDGE)}
 
-@router.get("/health")
+@app.get("/api/health")
 def health():
-    return {"status": "healthy"}
+    return {"status": "healthy", "entries_loaded": len(KNOWLEDGE)}
 
-@router.post("/chat")
+@app.post("/api/chat")
 async def chat(request: Request):
     try:
         body = await request.json()
-        message = body.get("message", "")
-        return {"reply": f"Backend received: {message}"}
+        user_message = body.get("message", "").strip()
+        
+        if not user_message:
+            return JSONResponse(
+                status_code=400,
+                content={"reply": "Please send a message."}
+            )
+
+        reply = await groq_rag_response(user_message)
+        return {"reply": reply}
+
     except Exception as e:
-        return {"reply": f"Error: {str(e)}"}
+        return JSONResponse(
+            status_code=500,
+            content={"reply": f"Server Error: {str(e)}"}
+        )
 
-# Mount router at BOTH /api and / so it works regardless of Vercel's path behavior
-app.include_router(router, prefix="/api")
-app.include_router(router, prefix="")
+async def groq_rag_response(query: str) -> str:
+    import httpx
+    
+    api_key = os.getenv("GROQ_API_KEY")
+    
+    # DEBUG: Check if key is loaded (remove this after fixing)
+    if not api_key:
+        return "ERROR: GROQ_API_KEY not found. Please add it in Vercel Dashboard > Project Settings > Environment Variables, then redeploy."
+    
+    # Build context from knowledge base
+    context = json.dumps(KNOWLEDGE[:10], indent=2, ensure_ascii=False)
+    
+    system_prompt = f"""You are Deepak Gaikwad's personal AI assistant.
+You help visitors learn about Deepak's skills, projects, experience, and background.
+Use the following knowledge base to answer questions accurately and concisely.
+If the answer is not in the knowledge base, say so politely.
 
-# REQUIRED for Vercel
+KNOWLEDGE BASE:
+{context}
+"""
+    
+    async with httpx.AsyncClient() as client:
+        response = await client.post(
+            "https://api.groq.com/openai/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json"
+            },
+            json={
+                "model": "llama-3.3-70b-versatile",
+                "messages": [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": query}
+                ],
+                "max_tokens": 1024,
+                "temperature": 0.7
+            },
+            timeout=30.0
+        )
+        
+        data = response.json()
+        
+        if "choices" not in data:
+            error_msg = data.get("error", {}).get("message", str(data))
+            return f"Groq API Error: {error_msg}"
+        
+        return data["choices"][0]["message"]["content"]
+
 handler = Mangum(app)
